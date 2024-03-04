@@ -1,0 +1,10 @@
+AtlantidaWebApi/.config/
+AtlantidaWebApi/Properties/
+AtlantidaWebApi/bin/
+AtlantidaWebApi/obj/
+AtlantidaWebApp/.config/
+AtlantidaWebApp/Properties/
+AtlantidaWebApp/bin/
+AtlantidaWebApp/obj/
+.vs/
+

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtlantidaWebApp", "AtlantidaWebApp\AtlantidaWebApp.csproj", "{EBF55824-10FB-4AC8-B6AD-A2C7FFBA9987}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtlantidaWebApi", "AtlantidaWebApi\AtlantidaWebApi.csproj", "{AAA02974-2EAF-41CF-9B96-7A5246242C63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBF55824-10FB-4AC8-B6AD-A2C7FFBA9987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBF55824-10FB-4AC8-B6AD-A2C7FFBA9987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBF55824-10FB-4AC8-B6AD-A2C7FFBA9987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBF55824-10FB-4AC8-B6AD-A2C7FFBA9987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAA02974-2EAF-41CF-9B96-7A5246242C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA02974-2EAF-41CF-9B96-7A5246242C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA02974-2EAF-41CF-9B96-7A5246242C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA02974-2EAF-41CF-9B96-7A5246242C63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C038A754-5542-49A8-9AE1-C45348906BA5}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,84 @@
+﻿@model IEnumerable<AtlantidaWebApp.Models.TarjetaViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@* <p>
+    <a asp-action="Create">Create New</a>
+</p> *@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombres)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroTarjeta)
+            </th>
+            @* <th>
+                @Html.DisplayNameFor(model => model.SaldoActual)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LimiteCredito)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SaldoDisponible)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PorcentajeInteres)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PorcentajeSaldoMinimo)
+            </th> *@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombres)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellidos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroTarjeta)
+            </td>
+            @* <td>
+                @Html.DisplayFor(modelItem => item.SaldoActual)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LimiteCredito)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SaldoDisponible)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PorcentajeInteres)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PorcentajeSaldoMinimo)
+            </td> *@
+            <td>
+                    @Html.ActionLink("Registrar Compra", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Registrar Pago", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Transacciones", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Estado de Cuenta TC", "DetailsTransacciones", new { id = item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,6 @@
+@AtlantidaWebApi_HostAddress = http://localhost:5237
+
+GET {{AtlantidaWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
