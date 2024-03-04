@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "00cc9e37-af8f-4ee3-a6af-1cd4d000d50b",
+		"name": "AtlantidaCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2249250"
+	},
+	"item": [
+		{
+			"name": "https://localhost:7042/api/Tarjeta/Get/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "id",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7042/api/Tarjeta/Get/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7042",
+					"path": [
+						"api",
+						"Tarjeta",
+						"Get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7042/api/Tarjeta/GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7042/api/Tarjeta/GetAll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7042",
+					"path": [
+						"api",
+						"Tarjeta",
+						"GetAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7042/api/Transaccion/GetTransacciones/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7042/api/Transaccion/GetTransacciones/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7042",
+					"path": [
+						"api",
+						"Transaccion",
+						"GetTransacciones",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7042/api/Transaccion/GetTransaccionesCargos/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7042/api/Transaccion/GetTransaccionesAbonos/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7042",
+					"path": [
+						"api",
+						"Transaccion",
+						"GetTransaccionesAbonos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7042/api/Transaccion/InsertarTransaccion/2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id\": 0,\r\n  \"numeroTarjeta\": \"string\",\r\n  \"fecha\": \"2024-03-04T08:51:24.066Z\",\r\n  \"descripcion\": \"Zapatos Adoc\",\r\n  \"tipoOperacion\": \"C\",\r\n  \"monto\": 45\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7042/api/Transaccion/InsertarTransaccion/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7042",
+					"path": [
+						"api",
+						"Transaccion",
+						"InsertarTransaccion",
+						"2"
+					],
+					"query": [
+						{
+							"key": "descripcion",
+							"value": "Zapatos",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7042/api/Transaccion/InsertarTransaccion/2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id\": 0,\r\n  \"numeroTarjeta\": \"string\",\r\n  \"fecha\": \"2024-03-04T08:51:24.066Z\",\r\n  \"descripcion\": \"Pago de TC\",\r\n  \"tipoOperacion\": \"A\",\r\n  \"monto\": 25\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7042/api/Transaccion/InsertarTransaccion/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7042",
+					"path": [
+						"api",
+						"Transaccion",
+						"InsertarTransaccion",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
